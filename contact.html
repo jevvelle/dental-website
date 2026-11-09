@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | Aurel Dental Studio</title>
+<meta name="description" content="Visit, call or message Aurel Dental Studio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js" defer></script>
+<script src="script.js" defer></script>
+</head>
+<body data-page="contact">
+<main>
+
+  <section class="phead wrap">
+    <p class="crumbs"><a href="index.html">Home</a> / Contact</p>
+    <h1>Say hello, <em>or drop in.</em></h1>
+    <p class="lead">Ask a question, or book a first visit. We reply within one working day.</p>
+  </section>
+
+  <section class="sec wrap">
+    <div class="contact">
+      <div class="info rv">
+        <div class="info-card"><i data-lucide="map-pin"></i><div><b>Address</b><span>18 Linden Row, Suite 4</span></div></div>
+        <div class="info-card"><i data-lucide="clock"></i><div><b>Hours</b><span>Mon to Sat, 9:00 to 18:00</span></div></div>
+        <div class="info-card"><i data-lucide="phone"></i><div><b>Phone</b><span>+1 (555) 014 2290</span></div></div>
+        <div class="info-card"><i data-lucide="mail"></i><div><b>Email</b><span>hello@aureldental.example</span></div></div>
+        <button class="btn btn-primary has-arr" data-book style="justify-self:start">Book Consultation <span class="arr"><i data-lucide="arrow-up-right"></i></span></button>
+      </div>
+
+      <form class="cform rv" id="contactForm" novalidate>
+        <h3>Send a message</h3>
+        <label class="field">Full name <input type="text" name="name" autocomplete="name"></label>
+        <label class="field">Email <input type="email" name="email" autocomplete="email"></label>
+        <label class="field">Message <textarea name="message" rows="5"></textarea></label>
+        <p class="err" id="cfErr" role="alert"></p>
+        <p class="formok" id="cfOk" hidden>Thank you. This is a demo form, so nothing was sent.</p>
+        <button type="submit" class="btn btn-primary has-arr" style="justify-self:start">Send message <span class="arr"><i data-lucide="arrow-up-right"></i></span></button>
+      </form>
+    </div>
+
+    <div class="mapimg rv"><img src="images/map.svg" alt="Placeholder map of the clinic location"></div>
+  </section>
+
+</main>
+</body>
+</html>

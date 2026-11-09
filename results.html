@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Results | Aurel Dental Studio</title>
+<meta name="description" content="Before and after cases from Aurel Dental Studio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js" defer></script>
+<script src="script.js" defer></script>
+</head>
+<body data-page="results">
+<main>
+
+  <section class="phead wrap">
+    <p class="crumbs"><a href="index.html">Home</a> / Results</p>
+    <h1>Results you can <em>compare.</em></h1>
+    <p class="lead">Drag the handle on each case. Images here are placeholders. Use patient photos only with written consent.</p>
+  </section>
+
+  <section class="sec wrap">
+    <div class="cases">
+
+      <article class="case rv">
+        <div class="case-meta"><div><span class="tag">Aesthetic veneers</span><h2 style="margin-top:10px">Shape and shade</h2></div><p>Uneven edges and staining corrected with eight porcelain veneers over two visits.</p></div>
+        <div class="ba" style="--pos:50%">
+          <img class="after" src="images/after-1.svg" alt="Placeholder after photo for veneers case">
+          <img class="before" src="images/before-1.svg" alt="Placeholder before photo for veneers case">
+          <span class="ba-tag t-b">Before</span><span class="ba-tag t-a">After</span>
+          <div class="handle"><span><i data-lucide="chevrons-left-right"></i></span></div>
+          <input type="range" min="0" max="100" value="50" aria-label="Before and after comparison, veneers case">
+        </div>
+      </article>
+
+      <article class="case rv">
+        <div class="case-meta"><div><span class="tag">Whitening</span><h2 style="margin-top:10px">Five shades lighter</h2></div><p>One clinic session and a take-home top up kit. Shape untouched, colour lifted.</p></div>
+        <div class="ba" style="--pos:50%">
+          <img class="after" src="images/after-2.svg" alt="Placeholder after photo for whitening case">
+          <img class="before" src="images/before-2.svg" alt="Placeholder before photo for whitening case">
+          <span class="ba-tag t-b">Before</span><span class="ba-tag t-a">After</span>
+          <div class="handle"><span><i data-lucide="chevrons-left-right"></i></span></div>
+          <input type="range" min="0" max="100" value="50" aria-label="Before and after comparison, whitening case">
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="sec wrap rv">
+    <div class="band">
+      <h2>Want a plan like this?</h2>
+      <button class="btn btn-primary has-arr" data-book>Book Consultation <span class="arr"><i data-lucide="arrow-up-right"></i></span></button>
+    </div>
+  </section>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Care Simulator | Aurel Dental Studio</title>
+<meta name="description" content="Clean a tooth and explore how a dental implant is built, layer by layer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js" defer></script>
+<script src="script.js" defer></script>
+</head>
+<body data-page="simulator">
+<main>
+
+  <section class="phead wrap">
+    <p class="crumbs"><a href="index.html">Home</a> / Care Simulator</p>
+    <p class="eyebrow">Interactive Dental Suite</p>
+    <h1>Care <em>Simulator.</em></h1>
+    <p class="lead">Clean the tooth, then explore how an implant is built, layer by layer.</p>
+  </section>
+
+  <section class="sec wrap">
+    <div class="sim">
+      <div class="stage">
+        <div id="view-clean">
+          <div class="cv-wrap" id="cvWrap">
+            <canvas id="tooth" width="400" height="440" aria-label="Tooth cleaning simulator"></canvas>
+            <span class="hint" id="hint"><i data-lucide="hand"></i> Drag over the stains</span>
+          </div>
+        </div>
+        <div id="view-implant" hidden>
+          <svg id="implantSvg" viewBox="0 0 240 340" role="img" aria-label="Implant breakdown">
+            <rect id="L-bone" x="40" y="190" width="160" height="130" rx="24" fill="#EADFCB"/>
+            <rect id="L-gum" x="40" y="150" width="160" height="56" rx="22" fill="#E7B1B8"/>
+            <g id="L-post">
+              <rect x="104" y="146" width="32" height="120" rx="10" fill="#C4CED9"/>
+              <path d="M104 166h32M104 184h32M104 202h32M104 220h32M104 238h32" stroke="#8A99AB" stroke-width="3"/>
+            </g>
+            <rect id="L-abut" x="100" y="106" width="40" height="36" rx="6" fill="#AEB9C6"/>
+            <path id="L-crown" d="M70 40C70 10 100 14 120 28C140 14 170 10 170 40C176 70 166 90 160 104L80 104C74 90 64 70 70 40Z" fill="#fff" stroke="#C9D8EA" stroke-width="3"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="seg" role="tablist" aria-label="Simulator step">
+          <button class="on" data-view="clean">1. Clean</button>
+          <button data-view="implant">2. Implant visualizer</button>
+        </div>
+
+        <div id="ctl-clean">
+          <h3>Tools</h3>
+          <div class="tools">
+            <button class="tool on" data-tool="scaler"><i data-lucide="zap"></i><b>Ultrasonic Scaler</b><small>Precise, clears fast</small></button>
+            <button class="tool" data-tool="polisher"><i data-lucide="sparkles"></i><b>Polishing Tool</b><small>Wide, gentle passes</small></button>
+          </div>
+          <div class="prog" style="margin-top:22px"><div class="prog-top"><span>Cleaned</span><b id="pct">0%</b></div><div class="bar"><i id="pbar"></i></div></div>
+          <p class="done" id="done" hidden style="margin-top:16px">Sparkling. Book a real polish whenever you like.</p>
+          <button class="btn btn-soft sm" id="reset" style="margin-top:18px">Reset tooth</button>
+        </div>
+
+        <div id="ctl-implant" hidden>
+          <h3>Treatment breakdown</h3>
+          <label class="range">Separate layers <input type="range" id="explode" min="0" max="100" value="0"></label>
+          <div class="layers" id="layers">
+            <button data-layer="crown"><b>Crown</b><small>Shade matched porcelain</small></button>
+            <button data-layer="abut"><b>Abutment</b><small>Titanium connector</small></button>
+            <button data-layer="post"><b>Implant post</b><small>Fuses with the jawbone</small></button>
+          </div>
+          <p class="note" id="layerNote">Select a layer to highlight it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec wrap rv">
+    <div class="band">
+      <h2>Ready for the real thing?</h2>
+      <button class="btn btn-primary has-arr" data-book>Book Consultation <span class="arr"><i data-lucide="arrow-up-right"></i></span></button>
+    </div>
+  </section>
+
+</main>
+</body>
+</html>

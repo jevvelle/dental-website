@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Treatments | Aurel Dental Studio</title>
+<meta name="description" content="All-on-4 implants, dental implants, clear aligners, veneers and whitening at Aurel Dental Studio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js" defer></script>
+<script src="script.js" defer></script>
+</head>
+<body data-page="treatments">
+<main>
+
+  <section class="phead wrap">
+    <p class="crumbs"><a href="index.html">Home</a> / Treatments</p>
+    <h1>Treatments, <em>explained.</em></h1>
+    <p class="lead">Choose a treatment to see how it works, how long it takes and what to expect.</p>
+  </section>
+
+  <section class="sec wrap">
+    <div class="treat" data-tabs>
+      <div class="tabs" role="tablist" aria-label="Treatments">
+        <button class="tab on" role="tab" data-tab="all4"><small>Full arch</small><b>All-on-4 Implants</b></button>
+        <button class="tab" role="tab" data-tab="implants"><small>Single tooth</small><b>Dental Implants</b></button>
+        <button class="tab" role="tab" data-tab="aligners"><small>Alignment</small><b>Clear Aligners</b></button>
+        <button class="tab" role="tab" data-tab="veneers"><small>Aesthetic</small><b>Aesthetic Veneers</b></button>
+        <button class="tab" role="tab" data-tab="whitening"><small>Brightening</small><b>Whitening</b></button>
+      </div>
+
+      <div class="tpanels">
+
+        <article class="tpanel" id="all4" role="tabpanel">
+          <img class="tp-img" src="images/treat-all4.svg" alt="Placeholder image for All-on-4 implants">
+          <div class="tp-body">
+            <h2>All-on-4 Implants</h2>
+            <p>A full arch of fixed teeth supported by four angled implants. Many patients leave with a working bridge on the day of surgery, without bone grafting.</p>
+            <div class="stats"><div class="stat"><b>1 day</b><span>Teeth in a day</span></div><div class="stat"><b>4</b><span>Implants per arch</span></div><div class="stat"><b>25+ yrs</b><span>Typical lifespan</span></div></div>
+            <ol class="steps"><li>3D scan and surgical plan</li><li>Implant placement under sedation</li><li>Same day fixed bridge</li><li>Final porcelain bridge at 4 months</li></ol>
+            <details class="faq"><summary>Is it painful?</summary><p>Most patients describe pressure and mild soreness for a few days. Sedation keeps the procedure comfortable.</p></details>
+            <details class="faq"><summary>Who is it suitable for?</summary><p>It suits people missing most or all teeth in an arch. A scan at your consultation confirms if there is enough bone.</p></details>
+            <button class="btn btn-primary has-arr" data-book data-treat="All-on-4 Implants">Book this treatment <span class="arr"><i data-lucide="arrow-up-right"></i></span></button>
+          </div>
+        </article>
+
+        <article class="tpanel" id="implants" role="tabpanel" hidden>
+          <img class="tp-img" src="images/treat-implants.svg" alt="Placeholder image of a dental implant">
+          <div class="tp-body">
+            <h2>Dental Implants</h2>
+            <p>A titanium post replaces the root, a small connector carries a custom porcelain crown. It looks, feels and cleans like a natural tooth.</p>
+            <div class="stats"><div class="stat"><b>3 to 6 mo</b><span>Typical journey</span></div><div class="stat"><b>98%</b><span>Demo success rate</span></div><div class="stat"><b>20+ yrs</b><span>Typical lifespan</span></div></div>
+            <ol class="steps"><li>Scan and plan the position</li><li>Place the implant post</li><li>Heal while bone fuses to the post</li><li>Fit the abutment and crown</li></ol>
+            <details class="faq"><summary>How long is healing?</summary><p>Bone usually fuses with the post in 8 to 12 weeks. We place a temporary tooth if the gap is visible.</p></details>
+            <button class="btn btn-primary has-arr" data-book data-treat="Dental implants">Book this treatment <span class="arr"><i data-lucide="arrow-up-right"></i></span></button>
+          </div>
+        </article>
+
+        <article class="tpanel" id="aligners" role="tabpanel" hidden>
+          <img class="tp-img" src="images/treat-aligners.svg" alt="Placeholder image for clear aligners">
+          <div class="tp-body">
+            <h2>Clear Aligners</h2>
+            <p>Near invisible trays move your teeth in small, planned steps. You see the full predicted result before the first tray is made.</p>
+            <div class="stats"><div class="stat"><b>6 to 14 mo</b><span>Average duration</span></div><div class="stat"><b>22 hrs</b><span>Daily wear</span></div><div class="stat"><b>3D</b><span>Result preview</span></div></div>
+            <ol class="steps"><li>Digital scan, no putty</li><li>Virtual smile preview</li><li>New trays every two weeks</li><li>Retainers to hold the result</li></ol>
+            <details class="faq"><summary>Can I eat with them in?</summary><p>No. Take them out to eat and drink anything except water, then brush before putting them back.</p></details>
+            <button class="btn btn-primary has-arr" data-book data-treat="Clear aligners">Book this treatment <span class="arr"><i data-lucide="arrow-up-right"></i></span></button>
+          </div>
+        </article>
+
+        <article class="tpanel" id="veneers" role="tabpanel" hidden>
+          <img class="tp-img" src="images/treat-veneers.svg" alt="Placeholder image for aesthetic veneers">
+          <div class="tp-body">
+            <h2>Aesthetic Veneers</h2>
+            <p>Ultra thin porcelain shells shaped and shaded to suit your face. They correct colour, chips and small gaps with minimal reduction of the tooth.</p>
+            <div class="stats"><div class="stat"><b>2 visits</b><span>Typical journey</span></div><div class="stat"><b>0.3 mm</b><span>Thin shell option</span></div><div class="stat"><b>15+ yrs</b><span>Typical lifespan</span></div></div>
+            <ol class="steps"><li>Smile design and mock up</li><li>Gentle preparation</li><li>Lab crafted porcelain</li><li>Bonding and bite check</li></ol>
+            <details class="faq"><summary>Can I try the shape first?</summary><p>Yes. We place a removable mock up so you can see and approve the shape before any preparation.</p></details>
+            <button class="btn btn-primary has-arr" data-book data-treat="Aesthetic veneers">Book this treatment <span class="arr"><i data-lucide="arrow-up-right"></i></span></button>
+          </div>
+        </article>
+
+        <article class="tpanel" id="whitening" role="tabpanel" hidden>
+          <img class="tp-img" src="images/treat-whitening.svg" alt="Placeholder image for whitening">
+          <div class="tp-body">
+            <h2>Whitening</h2>
+            <p>A professional whitening plan that lifts stains safely. Choose a one hour clinic session or custom trays for home.</p>
+            <div class="stats"><div class="stat"><b>3 to 6</b><span>Shades lighter</span></div><div class="stat"><b>1 hr</b><span>Clinic session</span></div><div class="stat"><b>12 mo</b><span>Typical result</span></div></div>
+            <ol class="steps"><li>Short check up and shade record</li><li>Gum protection applied</li><li>Whitening gel and light</li><li>Aftercare and top up plan</li></ol>
+            <details class="faq"><summary>Will it make my teeth sensitive?</summary><p>Some people feel mild sensitivity for a day. We adjust the strength and give a desensitising gel if needed.</p></details>
+            <button class="btn btn-primary has-arr" data-book data-treat="Whitening">Book this treatment <span class="arr"><i data-lucide="arrow-up-right"></i></span></button>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="sec wrap">
+    <div class="head rv"><div><p class="eyebrow">How it works</p><h2>Four steps, <em>no surprises.</em></h2></div></div>
+    <div class="process rv">
+      <div class="pstep"><h3>Consult</h3><p>Talk through goals and worries. No pressure to decide.</p></div>
+      <div class="pstep"><h3>Scan</h3><p>A quick 3D scan builds your digital plan.</p></div>
+      <div class="pstep"><h3>Plan</h3><p>See the proposed result and a written estimate.</p></div>
+      <div class="pstep"><h3>Treat</h3><p>Care delivered by one clinician, with aftercare built in.</p></div>
+    </div>
+  </section>
+
+  <section class="sec wrap rv">
+    <div class="band">
+      <h2>Not sure what you need?</h2>
+      <button class="btn btn-primary has-arr" data-book data-treat="General consultation">Book Consultation <span class="arr"><i data-lucide="arrow-up-right"></i></span></button>
+    </div>
+  </section>
+
+</main>
+</body>
+</html>
